@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Information</h1>
+            <p id="student-info"></p>
+        </header>
+        
+        <main>
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="search-btn">Get Weather</button>
+            </div>
+            
+            <div id="weather-result" class="weather-card hidden">
+                <h2 id="city-name"></h2>
+                <div class="weather-details">
+                    <img id="weather-icon" src="" alt="Weather icon">
+                    <p id="temperature"></p>
+                    <p id="weather-description"></p>
+                    <p id="humidity"></p>
+                    <p id="wind-speed"></p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>API Documentation: <a href="https://openweathermap.org/current" target="_blank">OpenWeatherMap Current Weather Data API</a></p>
+            <p>Tutorial followed: <a href="https://openweathermap.org/current#name" target="_blank">How to make API calls</a></p>
+        </footer>
+    </div>
+</body>
+</html>
