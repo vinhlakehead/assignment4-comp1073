@@ -1,1 +1,162 @@
+/*
+ * COMP1073 - Assignment 4
+ * Student ID: 200567688 
+ * Name: Vinh Tran
+ *
+ * Styles for Weather API Demo
+ * Designed for clarity and mobile responsiveness
+ */
 
+/* Base reset and typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Search area */
+.search-container {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 5px; 
+}
+
+#city-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+#city-input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+#search-btn {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+#search-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
+}
+
+#search-btn:disabled {
+    background-color: #95a5a6;
+    transform: none;
+}
+
+/* Weather card */
+.weather-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.weather-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.weather-details {
+    margin-top: 20px;
+}
+
+#weather-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+}
+
+#temperature {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+/* Utility classes */
+.hidden {
+    display: none;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #7f8c8d;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .search-container {
+        flex-direction: column;
+    }
+    
+    #search-btn {
+        width: 100%;
+    }
+}
